@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>Blackjack</h1>
+
+        <p id="message-el">Place your bet to play a round!</p>
+        <p id="bet-el">Your bet: $0</p>
+        <p id="cards-el"></p>
+        <p id="sum-el"></p>
+
+        <input id="bet-ipt" type="number" min="1" value="1">
+        <button id="bet-btn" onclick="getBetValue()">BET</button>
+        <button id="resetBet-btn" onclick="resetBet()">RESET BET</button>
+
+        <br>
+
+        <button id="startGame-btn" onclick="startGame()">START GAME</button>
+
+        <button id="playAgain-btn" onclick="playAgain()">PLAY AGAIN</button>
+
+        <button id="newCard-btn" onclick="newCard()">NEW CARD</button>
+        <br>
+        <button id="call-btn" onclick="dealerStartGame()">CALL</button>
+
+        <p id="dealercards-el"> </p>
+        <p id="dealersum-el"> </p>
+
+        <p id="player-el"></p>
+
+        <script src="index.js"></script>
+    </body>
+</html>
